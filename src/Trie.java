@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-class Trie {
+public class Trie {
 
     private Trie root;
     char val;
@@ -43,5 +43,18 @@ class Trie {
             else curr = curr.map.get(x);
         }
         return curr;
+    }
+}
+
+class Application {
+    public static void main(String[] args) {
+        Trie test = new Trie();
+        test.insert("apple");
+        System.out.println(test.search("apple"));   //true
+        System.out.println(test.search("app"));     //false
+        System.out.println(test.startsWith("app"));      //true
+        test.insert("app");
+        System.out.println(test.startsWith("app"));      //true
+
     }
 }
