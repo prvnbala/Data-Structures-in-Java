@@ -1,11 +1,15 @@
+package main.data_structure_implementation;
+
 import java.util.HashMap;
 
 public class Trie {
 
     private Trie root;
-    char val;
-    HashMap<Character, Trie> map = new HashMap<>();
+    private char val;
+    private HashMap<Character, Trie> map = new HashMap<>();
     boolean isEnd;
+    private int count;
+
 
     public Trie() {}
 
@@ -20,6 +24,7 @@ public class Trie {
             char x = word.charAt(i);
             curr.map.putIfAbsent(x, new Trie(x));
             curr = curr.map.get(x);
+            curr.count++;
         }
         curr.isEnd = true;
     }
@@ -43,6 +48,34 @@ public class Trie {
             else curr = curr.map.get(x);
         }
         return curr;
+    }
+
+    public char getVal() {
+        return val;
+    }
+
+    public HashMap<Character, Trie> getMap() {
+        return map;
+    }
+
+    public boolean isEnd() {
+        return isEnd;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public Trie getRoot() {
+        return root;
+    }
+
+    @Override
+    public String toString() {
+        return "Trie{" +
+                "val=" + val +
+                ", count=" + count +
+                '}';
     }
 }
 
