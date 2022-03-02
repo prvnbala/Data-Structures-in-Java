@@ -9,6 +9,21 @@ import java.util.Arrays;
 Given a set of words, find the shortest prefix for each word that uniquely identifies it
  */
 public class Problem_2 {
+    public String findUniquePrefix(Trie trie, String word) {
+        StringBuilder sb = new StringBuilder();
+        Trie curr = trie.getRoot();
+
+        for(char x : word.toCharArray()) {
+            curr = curr.getMap().get(x);
+            sb.append(curr.getVal());
+            if(curr.getCount() == 1) {
+                break;
+            }
+        }
+        return sb.toString();
+    }
+
+
     public String[] findUniquePrefix(String[] words) {
         String[] ans = new String[words.length];
 
@@ -18,22 +33,7 @@ public class Problem_2 {
         }
 
         for(int i = 0; i < ans.length; i++) {
-            String word = words[i];
-            StringBuilder sb = new StringBuilder();
-            Trie curr = trie.getRoot();
-            for(char x : word.toCharArray()) {
-                curr = curr.getMap().get(x);
-                if(curr != null) {
-                    sb.append(curr.getVal());
-                    if(curr.getCount() == 1) {
-                        break;
-                    }
-                } else {
-                    break;
-                }
-
-            }
-            ans[i] = sb.toString();
+            ans[i] = findUniquePrefix(trie, words[i]);
         }
         return ans;
     }
