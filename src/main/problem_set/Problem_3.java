@@ -28,7 +28,7 @@ public class Problem_3 {
     }
 
     public static void main(String[] args) {
-        String[] words = {"armor", "amor", "rumor", "grape", "ape", "shape", "tribe", "bungee" };
+        String[] words = {"armor", "armor", "rumor", "grape", "ape", "shape", "tribe", "bungee" };
         String suffix = "mor";
         Problem_3 p3 = new Problem_3();
         System.out.println(p3.suffixCount(words, suffix)); //3
