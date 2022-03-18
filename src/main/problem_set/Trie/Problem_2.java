@@ -1,7 +1,6 @@
-package main.problem_set;
+package main.problem_set.Trie;
 
 import main.data_structure_implementation.Trie;
-import test.Problem_1Test;
 
 import java.util.Arrays;
 

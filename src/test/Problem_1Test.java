@@ -2,7 +2,7 @@ package test;
 
 import org.junit.Test;
 
-import main.problem_set.Problem_1;
+import main.problem_set.String.Problem_1;
 
 import static org.junit.jupiter.api.Assertions.*;
 

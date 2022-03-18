@@ -1,4 +1,4 @@
-package main.problem_set;/*
+package main.problem_set.String;/*
 https://leetcode.com/problems/counting-words-with-a-given-prefix/
  */
 

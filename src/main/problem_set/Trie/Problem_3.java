@@ -1,4 +1,4 @@
-package main.problem_set;
+package main.problem_set.Trie;
 
 import StringUtil.StringUtil;
 import main.data_structure_implementation.Trie;
