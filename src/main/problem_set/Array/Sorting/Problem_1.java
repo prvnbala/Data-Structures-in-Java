@@ -21,10 +21,7 @@ class Problem_1 {
         }
         return minDiff;
     }
-}
 
-
-class Application1 {
     public static void main(String[] args) {
         Problem_1 problem1 = new Problem_1();
         Integer[] inp1 = {-5, 0, 5};

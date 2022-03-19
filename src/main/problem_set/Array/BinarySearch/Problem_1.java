@@ -49,10 +49,6 @@ public class Problem_1 {
         return true;
     }
 
-
-}
-
-class Application {
     public static void main(String[] args) {
         Problem_1 problem_1 = new Problem_1();
 
@@ -63,9 +59,9 @@ class Application {
                 124, 132, 132, 164, 164, 166, 166, 190, 190, 200, 200, 212, 212, 217, 217, 225, 225, 238, 238, 261,
                 261, 276, 276, 347, 347, 348, 348, 386, 386, 394, 394, 405, 405, 426, 426, 435, 435, 474, 474, 493, 493 };
 
-        ArrayList<Integer> test1 = new ArrayList<>(Arrays.asList(inp1));
+        /*ArrayList<Integer> test1 = new ArrayList<>(Arrays.asList(inp1));
         ArrayList<Integer> test2 = new ArrayList<>(Arrays.asList(inp2));
-        ArrayList<Integer> test3 = new ArrayList<>(Arrays.asList(inp3));
+        ArrayList<Integer> test3 = new ArrayList<>(Arrays.asList(inp3));*/
         ArrayList<Integer> test4 = new ArrayList<>(Arrays.asList(inp4));
 
         /*System.out.println(problem_1.solve(test1));

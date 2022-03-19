@@ -15,9 +15,7 @@ public class Problem_3 {
         String ans = String.join("", temp);
         return ans.charAt(0) == '0' ? "0" : ans.toString();
     }
-}
 
-class Application3 {
     public static void main(String[] args) {
         Problem_3 problem3 = new Problem_3();
 
